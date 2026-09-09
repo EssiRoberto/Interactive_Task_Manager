@@ -18,10 +18,10 @@
         const list = document.getElementById("task-list");
 
         btn.addEventListener("click", function() {
-            const taskText = input.value.trim();
-            if (taskText !== "") {
+            const text = input.value.trim();
+            if (text !== "") {
                 const li = document.createElement("li");
-                li.textContent = taskText;
+                li.textContent = text;
                 // list.appendChild(li);
                 // input.value = "";
 
