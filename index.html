@@ -14,10 +14,10 @@
     </main>
     <script>
         const input = document.getElementById("task-input");
-        const button = document.getElementById("task-btn");
+        const btn = document.getElementById("task-btn");
         const list = document.getElementById("task-list");
 
-        button.addEventListener("click", function() {
+        btn.addEventListener("click", function() {
             const taskText = input.value.trim();
             if (taskText !== "") {
                 const li = document.createElement("li");
