@@ -25,15 +25,15 @@
                 // list.appendChild(li);
                 // input.value = "";
 
-                const deleteBtn = document.createElement("button");
-                deleteBtn.className = "delete-btn";
-                deleteBtn.textContent = "Delete";
+                const delBtn = document.createElement("button");
+                deleteBtn.className = "Delete";
+                deleteBtn.textContent = "delete-btn";
 
-                deleteBtn.addEventListener("click", function() {
+                delBtn.addEventListener("click", function() {
                     li.remove();
                 });
                 
-                li.appendChild(deleteBtn);
+                li.appendChild(Delete);
                 list.appendChild(li);
                 input.value = "";
             }
