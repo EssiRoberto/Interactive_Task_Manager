@@ -24,14 +24,14 @@
                 li.textContent = text + " ";
 
                 const delBtn = document.createElement("button");
-                deleteBtn.className = "Delete";
-                deleteBtn.textContent = "delete-btn";
+                delBtn.className = "Delete";
+                delBtn.textContent = "delete-btn";
 
                 delBtn.addEventListener("click", function() {
                     li.remove();
                 });
                 
-                li.appendChild(Delete);
+                li.appendChild(delBtn);
                 list.appendChild(li);
                 input.value = "";
             }
