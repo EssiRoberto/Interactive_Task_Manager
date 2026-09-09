@@ -22,8 +22,8 @@
             if (taskText !== "") {
                 const li = document.createElement("li");
                 li.textContent = taskText;
-                list.appendChild(li);
-                input.value = "";
+                // list.appendChild(li);
+                // input.value = "";
 
                 const deleteBtn = document.createElement("button");
                 deleteBtn.className = "delete-btn";
@@ -34,6 +34,8 @@
                 });
                 
                 li.appendChild(deleteBtn);
+                list.appendChild(li);
+                input.value = "";
             }
         });
     </script>
